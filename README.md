@@ -10,7 +10,7 @@ during computations. This is the approach implemented here;
 It seems we can do the above reliably and __in parallel__. See `example.py`.
 
 <p align="center">
-  <img src="https://github.com/MiroK/remesh-gmsh/blob/master/doc/demo.gif">
+  <img src="https://github.com/MiroK/remsh-gmsh/blob/master/doc/demo.gif">
 </p>
 
 ## TODO
