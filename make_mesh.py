@@ -43,6 +43,8 @@ def msh_read(msh_file):
     # Remap cells
     mapping = dict(zip(used_nodes_idx, range(len(used_nodes_idx))))
     cells = [mapping[v] for v in cells]
+
+    assert set(range(len(nodes))) == set(cells)
     # Finally
     cells = np.array(cells, dtype='uintp')
     cells = cells.reshape((-1, 3))
@@ -66,7 +68,7 @@ def get_geo_file(x, y, rad):
         pyMPI.COMM_SELF.Spawn('gmsh', args=args, maxprocs=1)
 
         while not os.path.exists(msh_file):
-            time.sleep(1E-1)
+            time.sleep(5E-1)
         
         return msh_file
 

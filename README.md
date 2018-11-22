@@ -9,6 +9,10 @@ during computations. This is the approach implemented here;
 
 It seems we can do the above reliably and __in parallel__. See `example.py`.
 
+<p align="center">
+  <img src="https://github.com/MiroK/remesh-gmsh/blob/master/doc/demo.gif">
+</p>
+
 ## TODO
 - How to await termination of spawned process with Gmsh (currently `sleep`)
 - Awoid msh file (using Gmsh Python [API](http://gmsh.info/doc/texinfo/gmsh.html#Gmsh-API))
